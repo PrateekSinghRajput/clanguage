@@ -1,0 +1,18 @@
+
+TARGET=demo01
+CC=gcc
+
+DELETE=del
+
+$(TARGET): $(TARGET).o
+	$(CC) -o $(TARGET) $(TARGET).o
+
+$(TARGET).o: $(TARGET).c
+	$(CC) -c $(TARGET).c
+
+run:
+	.\$(TARGET)
+
+clean:
+	$(DELETE) $(TARGET).exe
+	$(DELETE) $(TARGET).o

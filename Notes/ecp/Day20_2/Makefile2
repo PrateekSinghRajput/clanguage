@@ -1,0 +1,25 @@
+
+TARGET=demo01
+
+SRC=$(TARGET).c
+# OBJ=$(TARGET).o
+OBJ=$(SRC:.c=.o)
+
+CC=gcc
+DELETE=del
+
+CFLAGS=-Wall -m32
+LDFLAGS=-lm
+
+$(TARGET): $(OBJ)
+	$(CC) -o $(TARGET) $(CFLAGS) $(LDFLAGS) $(OBJ)
+
+$(TARGET).o: $(SRC)
+	$(CC) -c $(CFLAGS) $(SRC)
+
+run:
+	.\$(TARGET)
+
+clean:
+	$(DELETE) $(TARGET).exe
+	$(DELETE) $(OBJ)
