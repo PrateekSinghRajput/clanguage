@@ -1,0 +1,17 @@
+
+# Rules for compiling
+demo01.exe: demo01.o
+	gcc -o demo01.exe demo01.o
+
+demo01.o: demo01.c
+	gcc -c demo01.c
+
+# Rule for running your program
+run:
+	.\demo01.exe
+
+# Rule for cleaning your project
+clean:
+	del demo01.exe demo01.o
+
+.phony: run clean

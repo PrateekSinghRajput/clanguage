@@ -1,0 +1,9 @@
+1. Compile individual .c file
+    gcc -c demo06.c         --> demo06.o
+    gcc -c fun.c            --> fun.o
+
+2. Link all obejct files
+    gcc -o demo06.exe demo06.o fun.o 
+
+3. Run the program
+    .\demo06.exe
