@@ -1,0 +1,44 @@
+# Steps to write, compile and run C program
+1. Create folder with name Day01.
+desd
+|
+ecp
+|		|
+cprograms	git-data
+|
+Day01
+
+2. Open VS code.
+
+3. Install Extension of C/C++.
+
+4. Open Day01 folder in VS code.
+	File->Open Floder-> Select Folder
+
+5. Create a file to write C code.
+	New File
+Give extension to file as ".c"
+
+6. Write your code in created file.
+#include<stdio.h>
+
+int main(void)
+{
+    printf("Hello DESD at Sunbeam\n");
+    return 0;
+}
+
+7. Compile the code.
+	i. Terminal->New Terminal
+	ii. Give following command to compile
+		gcc demo01.c
+
+8. Run your program with following command
+	./a.exe
+	.\a.exe
+
+
+
+
+
+
